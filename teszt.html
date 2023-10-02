@@ -1,0 +1,52 @@
+1. Sorolj fel 5 HTML elemet és írd le mire való.
+<div></div> általános tárolóelem,
+<p></p> paragrafus, azaz szövegrészleteket tárolhatunk benne
+<ul></ul> rendezett lista, tartalom listába helyezése
+<il></il> lista elemeit sorolhatjuk fel benne.
+<img> képek beillesztésére használt elem.
+2. Sorolj fel 5 CSS utasítást értékkel együtt és magyarázd el mit csinál.
+.dolog{
+    background-color: black; <!-- a háttérszínt állítja -->
+    font-size: 16px; <!-- a betű méretét állítja 16px méretre -->
+    margin: 10px 20px; <!-- a külső margót állítja a felső és alsó 10px a bal és jobb 20px-->
+    padding: 10px 5px 15px 0; <!--  belső margót a felső 10px a jobb 5px az alsó 15px a bal 0px-->
+    color: red; <!-- a szöveg színe piros-->
+}
+3. Létrehoztam githubon egy új repository-t írd le a klónozás menetét, majd azt, hogyan töltök fel egy új index.html nevű file-t. A parancsokat is írd le a megfelelő sorrendben.
+git clone https://github.com/felhasznalonev/teszt-repo.git
+cd repository-név
+touch index.html
+*hozzáadok tartalmat az index.html-hez*
+git add index.html
+git commit -m "Hozzáadtam az index.html fájlt"
+git push .
+4. Mit jelent a CSS-ben a specificitás? Hogyan számíthatjuk ki egy elem specificitását?
+specificitás jelentése, hogy több kérésre melyik parancsnak az értéke "súlyozottabb", melyik írja felül
+5. Írj egy HTML kódot, amely elhelyez a weboldalon egy ’dobozt’, amiben egy kép és alatta egy leírás található. Az egész ’doboz’ legyen link a http://www.prooktatas.hu oldalra.
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doboz Linkkel</title>
+    <style>
+        .link-doboz {
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .link-doboz img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<a href="http://www.prooktatas.hu" class="link-doboz">
+    <img src="kep_utvonal.jpg" alt="Leírás a képhez">
+    <p>Leírás</p>
+</a>
+</body>
+</html>
