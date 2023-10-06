@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFD4;
+    margin: 0;
+    padding: 0;
+}
+
+.center-container {
+    width: 70%;
+    margin: auto;
+    border: 2px solid brown;
+    background-color: white;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    background-color: #FF7F2A;
+    overflow: auto;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    float: left;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #BF153F;
+}
+
+main img {
+    float: right;
+    width: 30%;
+    margin-left: 10px;
+}
+
+main p {
+    color: #555;
+    text-align: justify;
+    hyphens: auto;
+}
+
+main section {
+    overflow: auto;
+    padding: 20px 0;
+}
+
+footer {
+    width: 100%;
+}
