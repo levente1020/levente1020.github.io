@@ -1,0 +1,248 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+header {
+    position: relative;
+    height: 150px;
+    background: linear-gradient(45deg, #f06, #9f6);
+    background-size: 200% 200%;
+    transition: background-position 0.5s, height 0.3s ease, background 0.3s ease;
+}
+
+header:hover {
+    background-position: 100% 100%;
+}
+
+header.scrolled {
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1-logo {
+    width: 120px;
+}
+
+.days .day {
+    display: flex;
+    margin: 20px 10%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.day {
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.day:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgb(192, 29, 29);
+}
+
+.day img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.day-info {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.day-details {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, transform 0.5s, max-height 0.5s ease-in-out;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.highlight {
+    padding: 20px 10%;
+}
+
+.highlight iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.day,
+.highlight {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feedback h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.feedback label,
+input,
+textarea {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    /* background-color: #f5f5f5; */
+    box-sizing: border-box;
+}
+
+.feedback label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback input,
+feedback textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.feedback button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback button:hover {
+    background-color: #c00;
+}
+
+footer,
+.map-container {
+    width: 100%;
+    position: relative;
+}
+
+.map-container {
+    height: 450px;
+    overflow: hidden;
+}
+
+.map-container iframe,
+footer img {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+#scrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #cf0606;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    font-size: 24px;
+}
+
+#scrollTopButton:hover {
+    background-color: #e6ca4f;
+}
+
+/* Média lekérdezés tabletekhez (pl. 768px alatt) */
+@media only screen and (max-width: 768px) {
+
+    .map-container {
+        height: 300px;
+        /* A térkép magasságának csökkentése */
+    }
+
+    .feedback input,
+    .feedback textarea {
+        font-size: 14px;
+        /* Az input mezők és a textarea betűméreteinek csökkentése */
+    }
+
+    .feedback button {
+        font-size: 16px;
+        /* A gomb betűméretének csökkentése */
+    }
+}

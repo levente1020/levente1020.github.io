@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doboz Linkkel</title>
+    <title>Felföldi Levente projektjei</title>
     <style>
-        .link-doboz {
-            display: inline-block;
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
         }
-        .link-doboz img {
-            width: 150px;
+
+        .dashboard {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: calc(33.33% - 20px); /* 3 projekt egy sorban, 20px térköz */
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-<a href="http://www.prooktatas.hu" class="link-doboz">
-    <img src="kep_utvonal.jpg" alt="Leírás a képhez">
-    <p>Leírás</p>
-</a>
+    <h1>Projektjeim</h1>
+    <div class="dashboard">
+        <div class="project-card">
+            <h2><a href="#link_a_projekt_Ahoz" class="project-link">10.10 Szab.vál.házi</a></h2>
+            <p>2023.10.10-re készített házifeladat</p>
+        </div>
+        <div class="project-card">
+            <h2><a href="#link_a_projekt_Bhoz" class="project-link">Projekt B</a></h2>
+            <p>Rövid leírás a projekt B-ről.</p>
+        </div>
+        <div class="project-card">
+            <h2><a href="#link_a_projekt_Choz" class="project-link">Projekt C</a></h2>
+            <p>Rövid leírás a projekt C-ről.</p>
+        </div>
+    </div>
 </body>
 </html>
