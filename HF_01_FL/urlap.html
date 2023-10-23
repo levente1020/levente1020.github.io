@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Első házifeladatom - Felföldi Levente</title>
+    <meta name="description" content="Első házifeladatom - Jövőbeli projektek">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Első házifeladatom - Jövőbeli projektek bemutatása</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Üdv a jövőbeli projekteknél!</h2>
+            <ul>
+                <a href="index.html">
+                    <button type="button">Főoldal</button>
+                </a>
+                <a href="jelenlegi_projektek.html">
+                    <button type="button">Jelenlegi projektek</button>
+                </a>
+                <a href="urlap.html">
+                    <button type="button">Kapcsolatfelvétel</button></a>
+            </ul>
+        </div>
+        <div class="banner1">
+            <h2>Szeretné, ha felvennénk a kapcsolatot Önnel? Rövidesen megkeressük!</h2>
+            <form action="feldolgozas.php" method="POST">
+                <!-- Szövegmező -->
+                <label for="nev">Név:</label>
+                <input type="text" id="nev" name="nev" required>
+                <br>
+        
+                <!-- E-mail mező -->
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <!-- Szövegmező -->
+                <label for="uzenet">Üzenet:</label>
+                <textarea id="uzenet" name="uzenet" rows="4" cols="50"></textarea>
+                <br>
+                <!-- Elküldés gomb -->
+                <input type="submit" value="Űrlap elküldése">
+            </form> </div>
+    </div>
+    <div class="footer">
+        <a href="https://prooktats.slack.com/team/U05R3FR7QN8">
+            <img class="slack" width="70" height="70" src="img/slack.png" alt="slack">
+        <a href="https://www.facebook.com/levente.felfoldi/"
+            ><img class="facebook" width="70" height="70" src="img/facebook.png" alt="facebook"></a>
+        <a href="levente1020@gmail.com">
+            <button type="button">Kapcsolatfelvétel e-mailben
+            </button></a>
+        <p>Kérdés esetén vedd fel a kapcsolatot az elérhetőségeink egyikén!</p>
+    </div>
+</body>
+
+</html>

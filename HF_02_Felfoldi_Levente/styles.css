@@ -1,0 +1,106 @@
+/* Template: */
+body {
+    background-color: #AAFFAA;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid brown;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#menu {
+    background-color: rgb(127, 170, 255);
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    border-radius: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+#menu a:hover {
+    background-color: black;
+    border-radius: 15px;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+img {
+    width: 160px;
+    height: auto;
+}
+
+p {
+    color: #333;
+}
+/* Visszagomb: */
+#back-button {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    width: 17px;
+    background-color: none;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#back-button img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+#back-button::before {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+#back-button:hover img {
+    opacity: 0;
+}
+
+#back-button:hover::before {
+    opacity: 1;
+}
+
+#content img {
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+    background-color: #e7e7e7;
+}
+/* Tovább: */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}

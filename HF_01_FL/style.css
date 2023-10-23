@@ -1,0 +1,124 @@
+header {
+    background: linear-gradient(to right, #6AABD0, #379CD6); /* Színátmenet felfelé (#ff6600-ról #ffcc00-ra) */
+    padding: 10px; /* Példa: padding hozzáadása a headerhez */
+    text-align: center; /* Szöveg középre igazítása */
+    color: #fff; /* Szövegszín fehérre állítása a jobb olvashatóság érdekében */
+    border-radius: 10px;
+
+}
+
+body {
+    background-color: #d57a7a;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner1 {
+    width: 1250px;
+    background-color: #eee;
+    padding: 20px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 60px;
+}
+  .button-container {
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+}
+.footer {
+    display: flex;
+    width: 1540px;
+    background-color: #de9494;
+    padding: 20px;
+    height: 60px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #6AABD0, #379CD6);
+}
+
+.footer p {
+    margin: 20; 
+    font-size: 20px; 
+    color: #333; 
+    
+}
+
+form {
+    max-width: 500px; /* Űrlap maximális szélessége */
+    margin: 0 auto; /* Űrlap középre igazítása a tartalomtól */
+    padding: 20px; /* Belső térköz hozzáadása űrlaphoz */
+    border: 1px solid #ddd; /* Keret hozzáadása az űrlaphoz */
+    background-color: #f5f5f5; /* Háttérszín hozzáadása az űrlaphoz */
+}
+
+/* Mezők és címkék stílusok */
+
+label {
+    display: block; /* Címke blokk elemként jelenjen meg, egy sorban egy mezővel */
+    font-weight: bold; /* Vastag betűtípus a címkékhez */
+    margin-bottom: 10px; /* Térköz az egyes címkék között */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Mezők teljes szélessége */
+    padding: 10px; /* Belső térköz a mezők körül */
+    margin-bottom: 5px; /* Térköz az egyes mezők között */
+    border: 1px solid #ccc; /* Keret a mezők körül */
+    border-radius: 5px; /* Levegőként lekerekített sarkok */
+}
+
+
+input[type="submit"] {
+    background-color: #007bff; /* Gomb háttérszíne */
+    color: #fff; /* Gomb szövegszíne */
+    padding: 10px 20px; /* Belső térköz a gomb körül */
+    border: none; /* Keret nélküli gomb */
+    border-radius: 5px; /* Levegőként lekerekített sarkok */
+    cursor: pointer; /* Mutató ujjá alakítása a gombon */
+}
+
+/* Hover-effektus az elküldés gombon */
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Gomb háttérszínének változása hoverkor */
+}

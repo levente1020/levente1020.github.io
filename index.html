@@ -1,59 +1,37 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felföldi Levente projektjei</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-
-        .dashboard {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: calc(33.33% - 20px); /* 3 projekt egy sorban, 20px térköz */
-            box-sizing: border-box;
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transform: translateY(-5px);
-        }
-
-        .project-link {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Házi feladatok</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Projektjeim</h1>
-    <div class="dashboard">
-        <div class="project-card">
-            <h2><a href="#link_a_projekt_Ahoz" class="project-link">10.10 Szab.vál.házi</a></h2>
-            <p>2023.10.10-re készített házifeladat</p>
-        </div>
-        <div class="project-card">
-            <h2><a href="#link_a_projekt_Bhoz" class="project-link">Projekt B</a></h2>
-            <p>Rövid leírás a projekt B-ről.</p>
-        </div>
-        <div class="project-card">
-            <h2><a href="#link_a_projekt_Choz" class="project-link">Projekt C</a></h2>
-            <p>Rövid leírás a projekt C-ről.</p>
-        </div>
-    </div>
+    <header>
+        <h1>Felföldi Levente</h1>
+    </header>
+
+    <main>
+        <section class="hazifeladatok">
+            <h2>Házi feladatok listája</h2>
+            <select id="hazifeladatok-lista">
+                <option value="https://levente1020.github.io/HF_01_FL/index.html">Házi feladat 1</option>
+                <option value="https://levente1020.github.io/HF_02_Felfoldi_Levente/index.html">Házi feladat 2</option>
+                <option value="https://levente1020.github.io/HF_03_Felfoldi_Levente/index.html">Házi feladat 3</option>
+                <option value="https://levente1020.github.io/HF_04_Szabadonval/index.html">Házi feladat 4</option>
+                <option value="https://levente1020.github.io/HF_05_Strand/index.html">Házi feladat 5</option>
+                <option value="https://levente1020.github.io/HF_06_Grid_oldal/index.html">Házi feladat 6</option>
+                <!-- További linketeket itt adhatod hozzá -->
+            </select>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Felföldi Levente 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strandolós oldal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="strandolos-kep.jpg" alt="Strand kép">
+        </header>
+        <aside>
+            <form action="#" method="post">
+                <h2>Kérem töltse ki a jelentkezési űrlapot</h2>
+                <label for="nev">Név:</label>
+                <input type="text" id="nev" name="nev" required maxlength="50">
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required maxlength="100">
+                <label for="telefonszam">Telefonszám:</label>
+                <input type="tel" id="telefonszam" name="telefonszam" maxlength="15">
+                <label for="to">Melyik tó érdekli?:</label>
+                <select id="to" name="to">
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza-to">Tisza-tó</option>
+                    <option value="szelidi-to">Szelidi-tó</option>
+                </select>
+                <label for="szallas">Milyen szállást keres?</label>
+                <input type="checkbox" id="szallas-szalloda" name="szallas" value="szalloda"> Szálloda<br>
+                <input type="checkbox" id="szallas-apartmanhaz" name="szallas" value="apartmanhaz"> Apartmanház<br>
+                <input type="checkbox" id="szallas-kemping" name="szallas" value="kemping"> Kemping<br>
+                <label for="ellatas">Milyen ellátás legyen?</label>
+                <input type="radio" id="ellatas-teljes" name="ellatas" value="teljes"> Teljes<br>
+                <input type="radio" id="ellatas-fel-panzio" name="ellatas" value="fel-panzio"> Fél panzió<br>
+                <input type="radio" id="ellatas-reggeli" name="ellatas" value="reggeli"> Csak reggeli<br>
+                <input type="radio" id="ellatas-nem" name="ellatas" value="nem"> Nem kérek ellátást<br>
+                <label for="uzenet">Egyéb üzenet:</label>
+                <textarea id="uzenet" name="uzenet" rows="4" maxlength="500"></textarea>
+                <input type="submit" value="Mehet">
+            </form>
+        </aside>
+        <main>
+            <section id="szekcio1">
+                <img src="balaton-kep.jpg" alt="Balaton">
+                <p>...</p>
+            </section>
+            <section id="szekcio2">
+                <img src="tisza-to-kep.jpg" alt="Tisza-tó">
+                <p>...</p>
+            </section>
+            <section id="szekcio3">
+                <img src="szelidi-to-kep.jpg" alt="Szelidi-tó">
+                <p>...</p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2023 Strandolós oldal</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
