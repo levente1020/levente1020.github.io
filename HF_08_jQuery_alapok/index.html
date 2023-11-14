@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Képgaléria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gallery-container">
+        <div class="gallery-image">
+            <img src="img/kep1.png" alt="Kép 1">
+        </div>
+        <div class="gallery-image">
+            <img src="img/kep2.png" alt="Kép 2">
+        </div>
+        <div class="gallery-image">
+            <img src="img/kep3.jpg" alt="Kép 3">
+        </div>
+        <div class="gallery-image">
+            <img src="img/kep4.jpg" alt="Kép 4">
+        </div>
+        <div class="gallery-image">
+            <img src="img/kep5.webp" alt="Kép 5">
+        </div>
+    </div>
+
+
+    <div id="lightbox-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
