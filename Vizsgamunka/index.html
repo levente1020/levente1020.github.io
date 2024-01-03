@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar épületgépész kivitelező Kft.</title>
+    
+    
+    <meta name="description" content="Magyar épületgépész kivitelező Kft.">
+    <meta name="keywords" content="gépészet, épületgépészet, referencia munkák, kapcsolat">
+    <meta name="author" content="Felföldi Levente">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+​
+</head>
+<body>
+    <!-- Fejléc -->
+    <!-- Fejléc -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Cég logó">
+        </div>
+        <div class="contact-info">
+            <p><a href="tel:+36204002952"><i class="fas fa-phone"></i></a></p>
+​
+        </div>
+    </header>
+​
+    
+    <section class="introduction">
+        <h1>Kik vagyunk és mivel foglalkozunk</h1>
+        <p>Cégünk, a "Magyar épületgépész kivitelező Kft." büszkén áll az épületgépészeti szakma szolgálatában immár 2017 óta. Bár mi magunk nemrégiben jöttünk létre, tapasztalatunk és szakértelemünk a területen közel 30 éves múltra tekint vissza. Ez az időszak folyamatosan fejlődésről és növekedésről tanúskodik, amely során olyan szolgáltatásokat nyújtottunk ügyfeleinknek, amelyekre büszkék vagyunk.
+​
+            Széleskörű szakmai tudásunk és gyakorlatunk lehetővé teszi számunkra, hogy különféle épületgépészeti feladatokban segítsük ügyfeleinket. Víz-, gáz-, fűtés- és klímaberendezések tervezését, telepítését és karbantartását végziünk, miközben más egyéb épületgépészeti munkákban is kiválóan jártasak vagyunk.</p>
+    </section>
+​
+    <!-- Kép galéria referencia munkákkal -->
+    <section class="gallery">
+        <div class="image-container">
+            <img src="img/munka1.png" alt="Referencia munka 1"></a>
+            <img src="img/munka2.png" alt="Referencia munka 2"></a>
+            <img src="img/munka3.png" alt="Referencia munka 3"></a>
+            <img src="img/munka4.png" alt="Referencia munka 4"></a>
+        </div>
+    </section>
+​
+ 
+    <div class="form-container">
+        <h2>Ajánlatkérés űrlap</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="nev">Név <span class="required">*</span></label>
+                <input type="text" id="nev" name="nev" placeholder="Kazán Béla" required>
+            </div>
+​
+            <div class="form-group">
+                <label for="telefonszam">Telefonszám <span class="required">*</span></label>
+                <input type="tel" id="telefonszam" name="telefonszam" placeholder="+36201234567" pattern="^\+[0-9]{11}$" required>
+            </div>
+​
+            <div class="form-group">
+                <label for="targy">Tárgy <span class="required">*</span></label>
+                <input type="text" id="targy" name="targy" required>
+            </div>
+​
+            <div class="form-group">
+                <label for="leiras">Hosszú leírás</label>
+                <textarea id="leiras" name="leiras" rows="4"></textarea>
+            </div>
+​
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="elfogadom" name="elfogadom" required>
+                    Elfogadom az ÁSZF-t
+                </label>
+            </div>
+​
+            <div class="form-submit">
+                <button type="submit">Küldöm</button>
+            </div>
+        </form>
+    </div>
+​
+   
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86651.82066373124!2d19.00702155204053!3d47.49840520601492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c3ed6fcb173f%3A0x400af0f6614a40!2zVHLDoXJrc3RhbCBtYWd6IEJ1ZGVwdXRlbg!5e0!3m2!1shu!2shu!4v1641382188871!5m2!1shu!2shu" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+​
+    
+    <footer>
+        <p>Magyar épületgépész kivitelező Kft.</p>
+        <p>Cím: 2161 Csomád Halom utca 3/b</p>
+        <p>Email: <a href="mailto:magyarepuletgepesz@gmail.com">magyarepuletgepesz@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36204002952">+36 20 400 2952</a></p>
+    </footer>
+​
+​
+    
+    <script src="script.js"></script>
+</body>
+</html>

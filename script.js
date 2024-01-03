@@ -5,10 +5,4 @@ document.getElementById('hazifeladatok-lista').addEventListener('change', functi
     }
 });
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const comingSoonButton = document.querySelector('.coming-soon-btn');
 
-    comingSoonButton.addEventListener('click', () => {
-        alert('Ez a szekció még fejlesztés alatt áll. Kérjük, látogasson vissza később.');
-    });
-});
