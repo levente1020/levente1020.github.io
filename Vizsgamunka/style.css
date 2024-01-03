@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
-​
+
 /* Fejléc stílusok */
 header {
     background-color: #d1dfef;
@@ -15,22 +15,21 @@ header {
     justify-content: space-between;
    
 }
-​
+
 .logo img {
     height: 50px;
 }
-​
+
 .contact-info {
     margin-right: 20px;
 }
-​
-​
+
 /* Bemutatkozó rész */
 .introduction {
     padding: 20px;
     background-color: #007BFF;
 }
-​
+
 /* Képek magasságának beállítása */
 /* Képek konténer stílusok */
 .image-container {
@@ -41,14 +40,13 @@ header {
     margin: 0;
     justify-content: space-between; /* Egyenletes eloszlás a hosszanti irányban */
 }
-​
+
 .image-container img {
     max-width: calc(25% - 3px); /* Egységes szélesség 4 kép mellett a térközzel együtt */
     height: auto;
     border-radius: 10px;
 }
-​
-​
+
 /* Űrlap konténer stílusok */
 .form-container {
     max-width: 500px;
@@ -58,22 +56,22 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-​
+
 .form-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
-​
+
 /* Form csoportok */
 .form-group {
     margin-bottom: 20px;
 }
-​
+
 .form-group label {
     font-weight: bold;
 }
-​
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -83,37 +81,37 @@ header {
     border-radius: 4px;
     font-size: 16px;
 }
-​
+
 .form-group select {
     appearance: none;
     background: url('arrow-down.png') no-repeat right;
     background-size: 20px;
     padding-right: 30px;
 }
-​
+
 .form-group .required {
     color: #ff0000;
     margin-left: 4px;
 }
-​
+
 .checkbox-label {
     display: block;
     position: relative;
     padding-left: 24px;
     cursor: pointer;
 }
-​
+
 .checkbox-label input {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
-​
+
 .form-submit {
     text-align: center;
 }
-​
+
 .form-submit button {
     background-color: #007bff;
     color: #ffffff;
@@ -123,11 +121,11 @@ header {
     font-size: 16px;
     cursor: pointer;
 }
-​
+
 .form-submit button:hover {
     background-color: #0056b3;
 }
-​
+
 /* Lábjegyzet */
 footer {
     background-color: #007BFF;
@@ -135,7 +133,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
-​
+
 p,h2 {
 text-align: justify;
 }
